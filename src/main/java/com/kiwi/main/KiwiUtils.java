@@ -120,7 +120,7 @@ public final class KiwiUtils {
                 } else if (httpRequestToBeSent.contentType().equals(ContentType.JSON)) {
                     // 调用 parseJsonToMap 方法将 JSON 字符串转换为 Map
                     Map<String, String> paramMap = parseJsonToMap(postParam);
-                    api.logging().logToOutput("paramMap: " + paramMap);
+                    // api.logging().logToOutput("paramMap: " + paramMap);
                     paramList.add(paramMap);
                     urlParamMap.put(urlParse, paramList);
                 }

@@ -147,7 +147,7 @@ public class TableModel extends AbstractTableModel {
             tableModel.clear();
             try {
                 URLParse urlParse = new URLParse(new URL(inputField.getText()));
-                api.logging().logToOutput(inputField.getText());
+                // api.logging().logToOutput(inputField.getText());
                 if (inputField.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(mainPanel, "Please enter a valid URL.", "Error", JOptionPane.ERROR_MESSAGE);
                     return;
