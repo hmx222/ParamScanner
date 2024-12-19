@@ -14,6 +14,7 @@ import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.*;
+import java.util.Timer;
 
 import static com.kiwi.main.Main.api;
 import static com.kiwi.main.Main.backList;
@@ -37,7 +38,7 @@ public final class KiwiUtils {
                             HttpRequest httpRequest = HttpRequest.httpRequestFromUrl(urlParse.getUrl()).
                                     withMethod(method).withAddedParameters(Map2HttpParameter(map));
                             HttpRequestResponse response = api.http().sendRequest(httpRequest);
-
+                            Thread.currentThread().sleep(100);
                             httpRequestResponses.add(response);
                         }
                     } else if (method.equals("POST")){

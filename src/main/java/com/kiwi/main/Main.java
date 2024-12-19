@@ -25,6 +25,7 @@ public class Main implements BurpExtension
         api.http().registerHttpHandler(new HttpHandler(tableModel));
         api.userInterface().registerSuiteTab("ParamScanner", tableModel.constructLoggerTab(api.userInterface()));
         api.userInterface().registerContextMenuItemsProvider(new ContextMenu(api));
+        // api.userInterface().registerSuiteTab("Jscanner", tableModel.constructLoggerTab(api.userInterface()));
         // 检测是否存在BackList.txt文件，如果不存在则创建
         if (!new File("./BackList.txt").exists()) {
             try {
