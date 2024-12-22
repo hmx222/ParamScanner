@@ -5,7 +5,7 @@
 - 自动收集请求参数
 
 - 提供GET/POST请求方法的参数爆破
-- 建议搭配[Jscanner](https://github.com/hmx222/JScanner)食用（发现502等参数码的链接后，来到此工具进行处理）
+- 融合了[Jscanner](https://github.com/hmx222/JScanner)（发现502等参数码的链接后，来到此工具进行处理）
 
 
 
@@ -15,15 +15,9 @@
 
 在release当中下载最新版本，直接进行安装即可，出现Good Luck 代表安装成功
 
+cmd情况下打开release当中的exe文件，成功监听2334端口。
 
-
-#### 使用
-
-在数据包页面，右键 -- `Extensions`-- `ParamScanner` -- `Find the Parameters`
-
-来到ParamScanner，选中你想要使用的请求方法，点击发送即可，**需要稍等一会**。
-
-
+访问本地2335端口打开web页面进行操作即可。
 
 #### 注意
 
@@ -43,8 +37,7 @@
 
 #### TODO
 
-目前正在逐渐融合JScanner的功能到burp插件当中，请各位耐心等待。
-
+不断在优化算法，减少性能开支。
 
 
 #### 遇到问题
