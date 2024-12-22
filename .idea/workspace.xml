@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="35e8645d-1137-48d4-b694-c064af4336c9" name="更改" comment="重构了大部分代码，支持外带exe">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/.idea/ParamScanner.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/main/HttpHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/main/HttpHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/main/HttpHeaderImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/main/HttpRequestResponseCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/HttpRequestResponseCallback/HttpRequestResponseCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/main/KiwiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/Utils/KiwiUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/main/ResponseCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/HttpRequestResponseCallback/ResponseCallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/main/historyExtract.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/src/main/java/com/kiwi/Utils/historyExtractUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/ParamScanner-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/target/ParamScanner-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/ParamScanner-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/target/ParamScanner-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/classes/com/kiwi/main/HttpHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/target/classes/com/kiwi/main/HttpHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/classes/com/kiwi/main/HttpHeaderImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/classes/com/kiwi/main/HttpRequestResponseCallback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/classes/com/kiwi/main/KiwiUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/classes/com/kiwi/main/KiwiUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/classes/com/kiwi/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/target/classes/com/kiwi/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/classes/com/kiwi/main/ResponseCallBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/classes/com/kiwi/main/historyExtract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDev/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDev/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hmx222&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hmx222/ParamScanner.git&quot;,
+    &quot;accountId&quot;: &quot;b4c2c696-e476-446e-b069-f8885f3a8b29&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2qYYKNe8fqbHiPOmlo2lfktlkwq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "burpExtensionDev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/My/JavaProject/ParamScanner/JavaDev/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.test.executor": "Run"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="ParamScanner" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="35e8645d-1137-48d4-b694-c064af4336c9" name="更改" comment="" />
+      <created>1734840912227</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734840912227</updated>
+      <workItem from="1734840913659" duration="966000" />
+      <workItem from="1734841894819" duration="3986000" />
+    </task>
+    <task id="LOCAL-00001" summary="重构了大部分代码，支持外带exe">
+      <option name="closed" value="true" />
+      <created>1734840977944</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734840977944</updated>
+    </task>
+    <task id="LOCAL-00002" summary="重构了大部分代码，支持外带exe">
+      <option name="closed" value="true" />
+      <created>1734840988416</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734840988416</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="重构了大部分代码，支持外带exe" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构了大部分代码，支持外带exe" />
+  </component>
+</project>
