@@ -1,4 +1,4 @@
-package com.kiwi.main;
+package com.kiwi.Utils;
 
 import burp.api.montoya.http.message.ContentType;
 import burp.api.montoya.http.message.HttpHeader;
@@ -7,6 +7,8 @@ import burp.api.montoya.http.message.requests.HttpRequest;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.kiwi.HttpRequestResponseCallback.HttpRequestResponseCallback;
+import com.kiwi.main.URLParse;
 
 import javax.swing.*;
 import java.io.*;
@@ -283,7 +285,7 @@ public final class KiwiUtils {
     }
 
 
-    public static void sendData2Local(String data,HttpRequestResponseCallback callback) {
+    public static void sendData2Local(String data, HttpRequestResponseCallback callback) {
         SwingWorker<List<HttpRequestResponse>, Void> worker = new SwingWorker<>() {
             private List<HttpRequestResponse> httpRequestResponses = new ArrayList<>();
             private String errorMessage;
@@ -327,13 +329,13 @@ public final class KiwiUtils {
         map.put("url", httpRequest.url());
         map.put("method", httpRequest.method());
         map.put("headers", httpHeaderHandler(httpRequest.headers()));
-        map.put("body", httpRequest.body());
+        // map.put("body", httpRequest.body());
         map.put("host", urlParse.getHost());
         map.put("path", paths.values());
         map.put("protocol", urlParse.getProtocol());
         map.put("port", urlParse.getPort());
         map.put("param", params.values());
-        map.put("rootDomain", urlParse.getRootDomain());
+        // map.put("rootDomain", urlParse.getRootDomain());
         map.put("notes", "");
         map.put("hash",UUID.randomUUID().toString());
         // api.logging().logToOutput("map: "+map.toString());

@@ -9,6 +9,9 @@ import java.util.Map;
 import burp.api.montoya.http.handler.*;
 import burp.api.montoya.proxy.ProxyHttpRequestResponse;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.kiwi.HttpRequestResponseCallback.ResponseCallBack;
+import com.kiwi.Utils.KiwiUtils;
+import com.kiwi.Utils.historyExtractUtils;
 
 import static com.kiwi.main.Main.api;
 
@@ -29,11 +32,13 @@ public class HttpHandler implements burp.api.montoya.http.handler.HttpHandler {
             try {
                     for (ProxyHttpRequestResponse proxyHttpRequestResponse : proxyHttpRequestResponses) {
                         ready2Send.add(KiwiUtils.covertHttpRequest2Map(proxyHttpRequestResponse.request(),
-                                historyExtract.getPathFromHistory(proxyHttpRequestResponses),
-                                historyExtract.getParamFromHistory(proxyHttpRequestResponses)));
+                                historyExtractUtils.getPathFromHistory(proxyHttpRequestResponses),
+                                historyExtractUtils.getParamFromHistory(proxyHttpRequestResponses)));
+                        TimingData timingData = proxyHttpRequestResponse.timingData();
+
                     }
                 // Map<String, Object> paramFromHistory = historyExtract.getParamFromHistory(proxyHttpRequestResponses);
-                api.logging().logToOutput(KiwiUtils.list2BeautifulJson(ready2Send));
+                // api.logging().logToOutput(KiwiUtils.list2BeautifulJson(ready2Send));
                 KiwiUtils.sendData2Local("Kiwi:::"+KiwiUtils.list2BeautifulJson(ready2Send),new ResponseCallBack());
             } catch (MalformedURLException | URISyntaxException | JsonProcessingException e) {
                 throw new RuntimeException(e);
@@ -55,7 +60,7 @@ public class HttpHandler implements burp.api.montoya.http.handler.HttpHandler {
         count++;
         if (count % 25 == 0) {
             try {
-                KiwiUtils.sendData2Local(KiwiUtils.map2json(historyExtract.getPathFromHistory(api.proxy().history())),new ResponseCallBack());
+                KiwiUtils.sendData2Local(KiwiUtils.map2json(historyExtractUtils.getPathFromHistory(api.proxy().history())),new ResponseCallBack());
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }

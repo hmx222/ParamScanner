@@ -1,11 +1,11 @@
-package com.kiwi.main;
+package com.kiwi.HttpRequestResponseCallback;
 
 import burp.api.montoya.http.message.HttpRequestResponse;
 
 import java.util.List;
 import static com.kiwi.main.Main.api;
 
-public class ResponseCallBack implements HttpRequestResponseCallback{
+public class ResponseCallBack implements HttpRequestResponseCallback {
 
     @Override
     public void onSuccess(List<HttpRequestResponse> response) {

@@ -1,4 +1,4 @@
-package com.kiwi.main;
+package com.kiwi.HttpRequestResponseCallback;
 
 import burp.api.montoya.http.message.HttpRequestResponse;
 

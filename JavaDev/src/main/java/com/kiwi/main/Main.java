@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import static com.kiwi.main.KiwiUtils.readFileToList;
+import static com.kiwi.Utils.KiwiUtils.readFileToList;
 
 
 public class Main implements BurpExtension
