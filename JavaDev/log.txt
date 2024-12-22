@@ -1,0 +1,9 @@
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+
+public class KiwiUtils {
+
+    public static String list2BeautifulJson(List<Map<String, Object>> list) {
+        return JSON.toJSONString(list, SerializerFeature.PrettyFormat);
+    }
+}
